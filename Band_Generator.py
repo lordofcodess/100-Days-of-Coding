@@ -28,6 +28,7 @@
 # print('a:' + a)
 # print('b:' + b)
 
+# Day One
 print("Welcome to the Band Name Generator")
 print('Band name should not be greater than 12 letters')
 city_name = input("What's the name of the city you grew up in?\n")
