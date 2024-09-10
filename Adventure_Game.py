@@ -36,30 +36,59 @@
 #             print('Leap year')
 #         else:
 #             print('Not leap year')
+#
+# print('Welcome to Python Pizza Deliveries!')
+# size = input('What size pizza do you want? S, M or L ')
+# add_pepperoni = input('Do you want pepperoni? Y or N ')
+# extra_cheese = input('Do you want extra cheese? Y or N ')
+#
+# if size == 'S':
+#     price = 15
+#     if add_pepperoni == 'Y':
+#         price += 2
+#     if extra_cheese == 'Y':
+#         price += 1
+#     print(f'The final bill is ${price}')
+# elif size == 'M':
+#     price = 20
+#     if add_pepperoni == 'Y':
+#         price += 3
+#     if extra_cheese == 'Y':
+#         price += 1
+#     print(f'The final bill is ${price}')
+# elif size == 'L':
+#     price = 25
+#     if add_pepperoni == 'Y':
+#         price += 3
+#     if extra_cheese == 'Y':
+#         price += 1
+#     print(f'The final bill is ${price}')
 
-print('Welcome to Python Pizza Deliveries!')
-size = input('What size pizza do you want? S, M or L ')
-add_pepperoni = input('Do you want pepperoni? Y or N ')
-extra_cheese = input('Do you want extra cheese? Y or N ')
+print('Welcome to the love calculator!')
+name1 = input('What is your name? \n')
+name2 = input('What is their name? \n')
 
-if size == 'S':
-    price = 15
-    if add_pepperoni == 'Y':
-        price += 2
-    if extra_cheese == 'Y':
-        price += 1
-    print(f'The final bill is ${price}')
-elif size == 'M':
-    price = 20
-    if add_pepperoni == 'Y':
-        price += 3
-    if extra_cheese == 'Y':
-        price += 1
-    print(f'The final bill is ${price}')
-elif size == 'L':
-    price = 25
-    if add_pepperoni == 'Y':
-        price += 3
-    if extra_cheese == 'Y':
-        price += 1
-    print(f'The final bill is ${price}')
+name1 = name1.lower()
+name2 = name2.lower()
+
+name = name1 + name2
+
+T = name.count('t')
+R = name.count('r')
+U = name.count('u')
+E = name.count('e')
+L = name.count('l')
+O = name.count('o')
+V = name.count('v')
+
+number_one = T + R + U + E
+number_two = L + O + V + E
+
+final_number = int(str(number_one) + str(number_two))
+
+if final_number < 10 or final_number > 90:
+    print(f'Your score is {final_number}, you go together like coke and mentos.')
+elif 40 <= final_number <= 50:
+    print(f'Your score is {final_number}, you are alright together.')
+else:
+    print(f'Your score is {final_number}.')
